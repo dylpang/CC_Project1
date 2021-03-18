@@ -15,7 +15,7 @@ class Explosive{
 		stroke(0);
 		fill(100);
 		rectMode(CENTER);
-		rect(500, 450, 50, 25, 20);
+		rect(this.xpos + 500, this.ypos + 450, 50, 25, 20);
 		noStroke();
 		// outer circle
 		fill(0);

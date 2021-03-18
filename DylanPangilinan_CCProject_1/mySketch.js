@@ -1,7 +1,6 @@
 // Dylan Pangilinan
 // Project 1
-
-let bomb;
+let bombs = [bomb_one, bomb_two, bomb_three];
 
 function setup() {
 	createCanvas(1000, 1000);
@@ -10,8 +9,14 @@ function setup() {
 
 
 function draw() {
-	bomb = new Explosive(0, 0);
-	bomb.display();
+	bomb_one = new Explosive(0, 0);
+	bomb_one.display();
+
+	bomb_two = new Explosive(-200, 0);
+	bomb_two.display();
+
+	bomb_three = new Explosive(200, 0);
+	bomb_three.display();
 
 
 }
