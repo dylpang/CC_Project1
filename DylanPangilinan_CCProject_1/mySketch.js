@@ -1,10 +1,10 @@
 // Dylan Pangilinan
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(1000, 1000);
 	background(100);
 }
 
 function draw() {
-	ellipse(mouseX, mouseY, 20, 20);
+	
 }
