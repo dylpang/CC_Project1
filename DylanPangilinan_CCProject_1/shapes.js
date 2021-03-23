@@ -10,6 +10,12 @@ class Explosive{
 		noStroke();
 		fill("#FF9A25");
 		ellipse(this.xpos + 475, this.ypos + 545, 45, 35);
+		//fuse
+		strokeWeight(2);
+		stroke(0)
+		fill(210,105,30);
+		rectMode(CENTER);
+		rect(this.xpos + 500, this.ypos + 450, 10, 50);
 		// top
 		strokeWeight(2);
 		stroke(0);
