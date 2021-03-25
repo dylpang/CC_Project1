@@ -43,7 +43,7 @@ class Explosive{
 
 	}
 
-	displayDead(){
+	displayDead(){ // if collision occurs, bomb explodes
 
 		//left leg
 		noStroke();
@@ -74,7 +74,7 @@ class Explosive{
 		fill("#FF9A25");
 		ellipse(this.xpos + 525, this.ypos + 545, 45, 35);
 	}
-	mover(){
+	mover(){ // movement (not implemented yet)
 		if (keyIsPressed){
 			if(keyCode == UP_ARROW){
 				this.bomb_y -= 20;
