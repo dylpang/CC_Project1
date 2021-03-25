@@ -1,27 +1,41 @@
 // Dylan Pangilinan
 // Project 1
-let bombs = [bomb_one, bomb_two, bomb_three];
-let fire = [fire_one, fire_two, fire_three];
+
+let fires = [];
 
 function setup() {
 	createCanvas(1000, 1000);
-	background("#F5F5DC");
+
+	bomb_one = new Explosive(0, 0);
+
+	for (let i= 0; i <= 10; i++){
+			fires[i] = new Fire(0, 0, random(2, 5));
+	}
 }
 
 
 function draw() {
-	bomb_one = new Explosive(0, 0);
+	background("#F5F5DC");
+	bomb_one.mover();
 	bomb_one.display();
 
-	bomb_two = new Explosive(-200, 0);
-	bomb_two.display();
 
-	bomb_three = new Explosive(200, 0);
-	bomb_three.display();
+	for (let index = 0; index < fires.length-1; index++){
+		fires[index].update();
+		fires[index].checkEdges();
+		fires[index].display();
+	}
 
-	fire_one = new Fire(500, 200);
-	fire_one.display();
-	fire_one.update();
+
+
+}
+
+
+
+function checkCollision(){
+	if(fires.collide(bomb_one)){
+		bomb_one.displayDead();
+	}
 
 
 }
