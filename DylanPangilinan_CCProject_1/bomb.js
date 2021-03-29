@@ -13,7 +13,7 @@ class Explosive{
 
 		//left leg
 		noStroke();
-		fill("#FF9A25");
+		fill("#FFFB32");
 		ellipse(this.xpos + 475, this.ypos + 545, 45, 35);
 		//fuse
 		strokeWeight(2);
@@ -37,7 +37,7 @@ class Explosive{
 		ellipse(this.xpos + 485, this.ypos + 485, 15,  25);
 		ellipse(this.xpos + 515, this.ypos + 485, 15,  25);
 		//right leg
-		fill("#FF9A25");
+		fill("#FFFB32");
 		ellipse(this.xpos + 525, this.ypos + 545, 45, 35);
 
 
@@ -47,7 +47,7 @@ class Explosive{
 
 		//left leg
 		noStroke();
-		fill("#FF9A25");
+		fill("#FFFB32");
 		ellipse(this.xpos + 475, this.ypos + 545, 45, 35);
 		//fuse
 		strokeWeight(2);
@@ -71,10 +71,10 @@ class Explosive{
 		rect(this.xpos + 485, this.ypos + 490, 25, 10);
 		rect(this.xpos + 515, this.ypos + 490, 25, 10);
 		//right leg
-		fill("#FF9A25");
+		fill("#FFFB32");
 		ellipse(this.xpos + 525, this.ypos + 545, 45, 35);
 	}
-	mover(){ // movement (not implemented yet)
+	mover(){ // movement
 		if (keyIsPressed){
 			if(keyCode == UP_ARROW){
 				this.bomb_y -= 20;
