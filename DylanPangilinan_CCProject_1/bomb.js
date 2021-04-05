@@ -44,24 +44,6 @@ class Explosive{
 	}
 
 	displayDead(){ // if collision occurs, bomb explodes
-
-		//left leg
-		noStroke();
-		fill("#FFFB32");
-		ellipse(this.xpos + 475, this.ypos + 545, 45, 35);
-		//fuse
-		strokeWeight(2);
-		stroke(0)
-		fill(210,105,30);
-		rectMode(CENTER);
-		rect(this.xpos + 500, this.ypos + 450, 10, 50);
-		// top
-		strokeWeight(2);
-		stroke(0);
-		fill(100);
-		rectMode(CENTER);
-		rect(this.xpos + 500, this.ypos + 450, 50, 25, 20);
-		noStroke();
 		// outer circle
 		fill("#FF0000");
 		circle(this.xpos + 500,this.ypos + 500, 100);
@@ -70,9 +52,6 @@ class Explosive{
 		fill(255);
 		rect(this.xpos + 485, this.ypos + 490, 25, 10);
 		rect(this.xpos + 515, this.ypos + 490, 25, 10);
-		//right leg
-		fill("#FFFB32");
-		ellipse(this.xpos + 525, this.ypos + 545, 45, 35);
 	}
 	mover(){ // movement
 		if (keyIsPressed){
