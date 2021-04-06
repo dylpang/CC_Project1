@@ -1,9 +1,5 @@
 // Dylan Pangilinan
 // Project 1
-/*
-My goal is to create a game where you're able to move the bomb around
-trying to avoid getting hit by fireballs
-*/
 let fires = [];
 let particles = [];
 

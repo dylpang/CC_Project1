@@ -1,4 +1,4 @@
-// I got lots of help from the coding train to make this smoke effect
+// I got help from the coding train tutorial to make this smoke effect
 // https://www.youtube.com/watch?v=UcdigVaIYAk&ab_channel=TheCodingTrain
 
 class Smoke{

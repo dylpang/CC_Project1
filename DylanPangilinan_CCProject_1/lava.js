@@ -1,3 +1,4 @@
+// simple rising lava effect
 class Lava {
 	constructor(){
 		this.x = 500;
